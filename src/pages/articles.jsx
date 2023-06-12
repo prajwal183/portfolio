@@ -9,12 +9,14 @@ import Article from "../components/articles/article";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import myArticles from "../data/articles";
+import ReactGA from 'react-ga4';
 
 import "./styles/articles.css";
 
 const Articles = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		ReactGA.send({ hitType: "pageview", page: "/articles", title: "articles" });
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "articles");

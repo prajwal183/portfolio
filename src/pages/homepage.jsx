@@ -11,6 +11,7 @@ import {
 	faMedium,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import ReactGA from "react-ga4";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -53,6 +54,8 @@ const Homepage = () => {
 				setStayLogo(false);
 			}
 		};
+
+		ReactGA.send({ hitType: "pageview", page: "/", title: "homepage" });
 
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
@@ -228,7 +231,9 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-						<h2 style={{margin: "0px"}}>Top 3 feature loaded apps I woked on!</h2>
+							<h2 style={{ margin: "0px" }}>
+								Top 3 feature loaded apps I woked on!
+							</h2>
 							<AllProjects />
 						</div>
 
@@ -238,6 +243,13 @@ const Homepage = () => {
 									<div
 										className="homepage-article"
 										key={(index + 1).toString()}
+										onClick={() =>
+											ReactGA.send({
+												hitType: "pageview",
+												page: "/",
+												title: "article",
+											})
+										}
 									>
 										<Article
 											key={(index + 1).toString()}

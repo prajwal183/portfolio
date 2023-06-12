@@ -5,6 +5,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import AllProjects from "../components/projects/allProjects";
+import ReactGA from "react-ga4";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -13,6 +14,12 @@ import "./styles/projects.css";
 
 const Projects = () => {
 	useEffect(() => {
+		ReactGA.send({
+			hitType: "pageview",
+			page: "/projects",
+			title: "projects",
+		});
+
 		window.scrollTo(0, 0);
 	}, []);
 

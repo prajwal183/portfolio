@@ -9,6 +9,7 @@ import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
 import myArticles from "../data/articles";
+import ReactGA from 'react-ga4'
 
 import "./styles/readArticle.css";
 
@@ -22,6 +23,8 @@ const ReadArticle = () => {
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		ReactGA.send({ hitType: "pageview", page: "/read-article", title: "read-article" });
+
 	}, [article]);
 
 	ArticleStyle = styled.div`

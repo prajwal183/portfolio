@@ -8,12 +8,15 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
+import ReactGA from 'react-ga4';
 
 import "./styles/about.css";
 
 const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		ReactGA.send({ hitType: "pageview", page: "/about", title: "about" });
+
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "about");
