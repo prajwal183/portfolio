@@ -38,7 +38,7 @@
 
 .homepage-image-container {
 	width: 370px;
-	height: 380px;
+	height: 510px;
 }
 
 .homepage-image-wrapper {
@@ -86,6 +86,7 @@
 
 .homepage-article {
 	padding-bottom: 5px;
+	text-align: justify;
 }
 
 .homepage-works {

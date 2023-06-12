@@ -6,8 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
 	faGithub,
-	faStackOverflow,
 	faInstagram,
+	faGitlab,
+	faMedium,
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -113,7 +115,56 @@ const Homepage = () => {
 							</div>
 						</div>
 
+						<div className="subtitle">
+							<h3>What sets me apart?</h3>
+							<p>
+								As a full stack developer, I'm fluent in both
+								front-end and back-end technologies. From
+								designing intuitive user interfaces to
+								architecting scalable server solutions, I
+								possess a comprehensive understanding of the
+								development process. I'm well-versed in HTML,
+								CSS, JavaScript, React, Node.js, SQL and noSQL,
+								and more. In this ever-evolving industry, I'm
+								constantly learning and adapting, staying ahead
+								of the curve.
+							</p>
+							<h3>Why choose me?</h3>
+							<p>
+								Beyond technical skills, I bring a visionary
+								mindset to the table. I possess a keen eye for
+								identifying opportunities and predicting future
+								trends. By staying current with emerging
+								technologies and industry practices, I ensure
+								that the solutions I create are not only
+								cutting-edge but also future-proof. My mission
+								is to build products that not only meet
+								immediate user needs but also revolutionize
+								industries and reshape the way we interact with
+								technology.
+							</p>
+							<p>
+								Are you seeking a skilled developer to bring
+								your ideas to life? I'm here to help! Whether
+								you have a specific project in mind or wish to
+								explore potential collaborations, I encourage
+								you to reach out to me. Let's join forces to
+								create something extraordinary together.
+							</p>
+							<h2>Let's collaborate!</h2>
+						</div>
+
 						<div className="homepage-socials">
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
 							<a
 								href={INFO.socials.twitter}
 								target="_blank"
@@ -135,12 +186,12 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.gitlab}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
+									icon={faGitlab}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -151,6 +202,16 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faInstagram}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.medium}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faMedium}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -167,6 +228,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
+						<h2 style={{margin: "0px"}}>Top 3 feature loaded apps I woked on!</h2>
 							<AllProjects />
 						</div>
 

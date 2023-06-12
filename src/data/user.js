@@ -1,3 +1,5 @@
+import { techLogos } from "./logos";
+
 const INFO = {
 	main: {
 		title: "Prajwal | Fullstack dev | Solutions Architect",
@@ -7,43 +9,100 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		twitter: "https://twitter.com/praju_anjanappa",
+		github: "https://github.com/prajwal183",
+		linkedin: "https://www.linkedin.com/in/prajwal183",
+		instagram: "https://instagram.com/praju.js",
+		gitlab: "https://gitlab.com/",
+		medium: "https://medium.com/@praju.anjanappa",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile developer, and a visionary.",
+		title: "Senior fullstack web and mobile developer and a visionary dedicated to creating transformative digital experiences.",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"I'm not your average developer – I'm a catalyst for change, a creative problem solver, and a visionary. With over a 4+ years of experience in the industry, I possess an intimate understanding of web development intricacies and have mastered the entire technology stack. My technical prowess, combined with my ability to envision the bigger picture, empowers me to craft cutting-edge solutions that surpass expectations.",
 	},
 
 	about: {
-		title: "I’m Prajwal, living in India, where I shape the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+		title: " I'm Prajwal Anjanappa, a seasoned senior full stack developer and visionary dedicated to pushing the boundaries of technology and creating impactful digital experiences. Allow me to share a bit about myself and my journey in the world of development.",
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "Insights, Ideas, and Inspiration for the Curious Mind",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"A treasure trove of insights, ideas, and inspiration for the curious minds seeking to delve deeper into the world of technology, development, and innovation. Here, I share my thoughts, experiences, and discoveries through a collection of carefully crafted articles. Join me on a journey of learning and exploration as we uncover valuable insights together.",
 	},
 
 	projects: [
 		{
-			title: "Project 1",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			title: "CEMS-vendor management",
+			description: `Web and Android app which was aimed at automating the complete management and payroll process of contract-based employees empowering the businesses in better and efficient handling of the contract-based employees. The vision was to bring out complete transparency of the payroll process between the employers, contractors and employees, which is completely customizable for the different Human Resource Management rules employed by different types of enterprises`,
+			logos: [
+				techLogos.js,
+				techLogos.java,
+				techLogos.html,
+				techLogos.css,
+				techLogos.react,
+				techLogos.node,
+				techLogos.mongodb,
+				techLogos.sql,
+				techLogos.android,
+				techLogos.firebase,
+				techLogos.redux,
+				techLogos.git,
+				techLogos.gcp,
+			],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://themit.in/cems-for-principal-employer/",
+		},
+		{
+			title: "TRIPLE ESS",
+			description: `Web and Andriod app which automated the complete production process of the corrugated packaging 
+			industry, which aimed at bringing out the maximum efficiency of the production process by use of real time data 
+			from raw materials to the finished product and tracking wastages at the fingertips of the employer. Main USP of the proudct
+			is collect data whereever it is generated in a production company. We aimed at automating the data collection with the help 
+			of mobile devices and run analytics in a web app`,
+			logos: [
+				techLogos.js,
+				techLogos.node,
+				techLogos.java,
+				techLogos.html,
+				techLogos.css,
+				techLogos.react,
+				techLogos.mongodb,
+				techLogos.android,
+				techLogos.firebase,
+				techLogos.redux,
+				techLogos.git,
+				techLogos.gcp,
+			],
+			linkText: "View Project",
+			link: "https://themit.in/packaging-erp/",
+		},
+		{
+			title: "Invoice Desk",
+			description: `Invoice Desk is a user-friendly invoicing solution that allows seamless integration with 
+			the current workflow of the users, empowering users to enhance functionality of your existing apps through 
+			our collection of pre-built integrations. App was built with an API first approach. Users can consume the application as a 
+			Web App, API or integrate our client side SDK's in their current workflow or build a new api using the SDK.`,
+			logos: [
+				techLogos.typescript,
+				techLogos.nestjs,
+				techLogos.nextjs,
+				techLogos.node,
+				techLogos.psql,
+				techLogos.js,
+				techLogos.html,
+				techLogos.css,
+				techLogos.redux,
+				techLogos.git,
+				techLogos.aws,
+			],
+			linkText: "View Project",
+			link: "https://www.invoicedesk.app/",
 		},
 
-		{
+		/* 	{
 			title: "Project 2",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
@@ -77,7 +136,7 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://github.com",
-		},
+		}, */
 	],
 };
 

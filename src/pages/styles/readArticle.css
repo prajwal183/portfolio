@@ -66,3 +66,9 @@
 	font-family: system-ui;
 	color: #52525b;
 }
+
+@media (max-width: 960px){
+	.read-article-wrapper{
+		width: 100%;
+	}
+}
