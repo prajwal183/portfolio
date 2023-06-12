@@ -33,6 +33,11 @@
 .project-logo img {
 	width: 100%;
 }
+.logo-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+}
 
 .project-title {
 	font-family: var(--secondary-font);
@@ -45,6 +50,7 @@
 
 .project-description {
 	color: var(--secondary-color);
+	text-align: justify;
 }
 
 .project-link {
@@ -67,6 +73,6 @@
 
 @media (max-width: 600px) {
 	.project {
-		height: 300px;
+		height: fit-content;
 	}
 }
