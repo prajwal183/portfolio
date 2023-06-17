@@ -54,6 +54,7 @@ const Homepage = () => {
 				setStayLogo(false);
 			}
 		};
+		
 
 		ReactGA.send({ hitType: "pageview", page: "/", title: "homepage" });
 
