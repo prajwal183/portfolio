@@ -5,6 +5,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
+import ReactGA from 'react-ga4'
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -14,6 +15,7 @@ import "./styles/contact.css";
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		ReactGA.send({ hitType: "pageview", page: "/contact", title: "contact" });
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "contact");

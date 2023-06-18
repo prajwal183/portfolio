@@ -5,6 +5,7 @@ import Project from "./project";
 import INFO from "../../data/user";
 
 import "./styles/allProjects.css";
+import ReactGA from 'react-ga4'
 
 const AllProjects = () => {
 	return (
@@ -17,6 +18,13 @@ const AllProjects = () => {
 						description={project.description}
 						linkText={project.linkText}
 						link={project.link}
+						onClick={() =>
+							ReactGA.event({
+								action:"project_click",
+								category:"projects",
+								label:"Projects_click"
+							})
+						}
 					/>
 				</div>
 			))}
